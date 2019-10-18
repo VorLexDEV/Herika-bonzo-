@@ -13,7 +13,7 @@ module.exports = class PruneCommand extends Command {
       args: [
         {
           key: 'deleteCount',
-          prompt: 'How many messages do you want to delete?',
+          prompt: 'Snipin how many messages? nerf.',
           type: 'integer',
           validate: deleteCount => deleteCount < 100 && deleteCount > 0
         }
@@ -24,7 +24,7 @@ module.exports = class PruneCommand extends Command {
   run(message, { deleteCount }) {
     message.channel
       .bulkDelete(deleteCount)
-      .then(messages => message.say(`Deleted ${messages.size} messages`))
+      .then(messages => message.say(`Headshotted ${messages.size} messages`))
       .catch(e => {
         console.error(e);
         return message.say(
