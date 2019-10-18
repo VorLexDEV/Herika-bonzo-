@@ -24,7 +24,7 @@ module.exports = class PruneCommand extends Command {
   run(message, { deleteCount }) {
     message.channel
       .bulkDelete(deleteCount)
-      .then(messages => message.say(`Headshotted ${messages.size} messages`))
+      .then(messages => message.say(`Thanos just snapped ${messages.size} messages out of existance`))
       .catch(e => {
         console.error(e);
         return message.say(
