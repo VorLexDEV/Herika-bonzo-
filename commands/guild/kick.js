@@ -13,12 +13,12 @@ module.exports = class KickCommand extends Command {
       args: [
         {
           key: 'userToKick',
-          prompt: 'Who do you want to kick?',
+          prompt: 'Kickin who, nerd?',
           type: 'string'
         },
         {
           key: 'reason',
-          prompt: 'Why do you want to kick this user',
+          prompt: 'Why Kickin ze user, nerf?',
           type: 'string'
         }
       ]
@@ -29,7 +29,7 @@ module.exports = class KickCommand extends Command {
     const user = message.mentions.members.first();
     user
       .kick(reason)
-      .then(() => message.say(`Kicked ${user} reason: ${reason}`))
+      .then(() => message.say(`Kicked ${user} for: ${reason}`))
       .catch(e => {
         message.say('Something went wrong when trying to kick this user');
         return console.error(e);
