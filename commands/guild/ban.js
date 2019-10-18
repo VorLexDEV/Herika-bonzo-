@@ -13,12 +13,12 @@ module.exports = class BanCommand extends Command {
       args: [
         {
           key: 'userToBan',
-          prompt: 'Who do you want to ban?',
+          prompt: 'What you wanna ban, boi?',
           type: 'string'
         },
         {
           key: 'reason',
-          prompt: 'Why do you want to ban this user',
+          prompt: 'Why are we using the ban hammer again, m8?',
           type: 'string'
         }
       ]
@@ -29,7 +29,7 @@ module.exports = class BanCommand extends Command {
     const user = message.mentions.members.first();
     user
       .ban(reason)
-      .then(() => message.say(`Banned ${user} reason: ${reason}`))
+      .then(() => message.say(`Thor just eletrocuted ${user} for: ${reason}`))
       .catch(e => {
         message.say('Something went wrong when trying to ban this user');
         return console.error(e);
