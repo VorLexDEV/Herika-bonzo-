@@ -1,8 +1,8 @@
 {
-  "prefix": "h!",  // You can change the prefix to whatever you want it doesn't have to be - !
+  "prefix": "h!", 
   "token": "NDY2NzAwNjg4NjUxNTgzNDk5.XanS7g.wgVO9YSiGTostEdTAii-HrW149U",
   "tenorAPI": "Y5CQ0Z0NGG38",
   "newsAPI": "7138688daf044641895598140ada1088",
   "youtubeAPI": "youtube-api-key",
-  "yandexAPI": 'yandex-api-key"
+  "yandexAPI": 'trnsl.1.1.20191018T150527Z.f2dce5c473dad8f4.b2a89724ce8265db79df10ea38e097ae43e87d59"
 }
