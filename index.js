@@ -42,7 +42,7 @@ client.registry
 
 client.once('ready', () => {
   console.log('Ready!');
-  client.user.setActivity('!help for commands', 'WATCHING');
+  client.user.setActivity('h!help for commands', 'WATCHING');
 });
 
 client.on('guildMemberAdd', member => {
